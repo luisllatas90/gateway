@@ -19,3 +19,11 @@ spring:
               uri: lb://configuracion-service
               predicates:
               - Path=/usuarios/**
+            - id: ingr-service
+              uri: lb://ingrediente-service
+              predicates:
+               - Path=/ingredientes/**
+            - id: plat-service
+              uri: lb://plato-service
+              predicates:
+               - Path=/platos/**
